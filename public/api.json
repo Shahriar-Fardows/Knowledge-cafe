@@ -1,0 +1,61 @@
+[
+    {
+      "id": 1,
+      "cover": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "The Most Adorable Cats in the World",
+      "author": "Bard",
+      "author_img": "https://pagedart.com/images/me-small.webp",
+      "postedDate": "2023-11-02",
+      "readingTime": "5 minutes",
+      "hashtags": ["cats", "cute", "adorable", "animals"]
+    },
+    {
+      "id": 2,
+      "cover": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1172&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "The Most Popular Dog Breeds of 2023",
+      "author": "Bard",
+      "author_img": "https://pagedart.com/images/me-small.webp",
+      "postedDate": "2023-11-02",
+      "readingTime": "7 minutes",
+      "hashtags": ["dogs", "breeds", "popular", "pets"]
+    },
+    {
+      "id": 3,
+      "cover": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "The 10 Most Beautiful Places to Travel in the World",
+      "author": "Bard",
+      "author_img": "https://pagedart.com/images/me-small.webp",
+      "postedDate": "2023-11-02",
+      "readingTime": "10 minutes",
+      "hashtags": ["travel", "beautiful", "places", "world"]
+    },
+    {
+      "id": 4,
+      "cover": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "The 10 Most Delicious Foods in the World",
+      "author": "Bard",
+      "author_img": "https://pagedart.com/images/me-small.webp",
+      "postedDate": "2023-11-02",
+      "readingTime": "8 minutes",
+      "hashtags": ["food", "delicious", "world", "cuisine"]
+    },
+    {
+      "id": 5,
+      "cover": "https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?auto=format&fit=crop&q=80&w=1130&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "The Latest Trends in Technology",
+      "author": "Bard",
+      "author_img": "https://pagedart.com/images/me-small.webp",
+      "postedDate": "2023-11-02",
+      "readingTime": "9 minutes",
+      "hashtags": ["technology", "trends", "future", "gadgets"]
+    },
+    {
+      "id": 6,
+      "cover": "https://images.unsplash.com/photo-1495106245177-55dc6f43e83f?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "The Most Beautiful Flowers in the World",
+      "author": "Bard",
+      "author_img": "https://pagedart.com/images/me-small.webp",
+      "postedDate": "2023-11-02",
+      "readingTime": "6 minutes"
+    }
+]
