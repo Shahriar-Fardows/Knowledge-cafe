@@ -1,9 +1,18 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 import PropTypes from 'prop-types'; // ES6
+import { useState } from 'react';
 import { BsFillBookmarkCheckFill } from "react-icons/bs";
+import { CiBookmark } from "react-icons/ci";
 
 const Blog = ({ blog }) => {
+
+    const [isClick , setIsClick] = useState(false);
+
+    const ButtonClick = () =>{
+        setIsClick(!isClick)
+    }
+
     console.log('blog', blog)
     const { cover, author_img, postedDate, title, author, readingTime, hashtags } = blog;
     return (
@@ -19,7 +28,8 @@ const Blog = ({ blog }) => {
                 </div>
                 <div className='flex gap-2 items-center'>
                     <span>{readingTime}</span>
-                    <span><BsFillBookmarkCheckFill /></span>
+                    <button onClick={ButtonClick}>{isClick ? <BsFillBookmarkCheckFill /> : <CiBookmark/>  }</button>
+                    
                 </div>
             </div>
             <div className='my-[20px]'>
