@@ -4,7 +4,8 @@ import Blog from "../blog/Blog";
 
 
 
-const Blogs = () => {
+// eslint-disable-next-line react/prop-types
+const Blogs = ({addBookMarks}) => {
     const [blogData , setBlogData] = useState([]);
 
     useEffect(()=> {
@@ -19,6 +20,7 @@ const Blogs = () => {
             {
                blogData.map(blog => <Blog
                key={blog.id}
+               addBookMarks={addBookMarks}
                 blog={blog}
                ></Blog>)
             }

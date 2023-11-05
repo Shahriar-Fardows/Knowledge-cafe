@@ -1,10 +1,16 @@
+import PropTypes from 'prop-types'
 
-const BookMark = () => {
+const BookMark = ({ bookMark }) => {
+    const { title } = bookMark;
     return (
-        <div className="w-1/3 border  ml-[5rem] bg-[#e5ebe9]">
-            <div><h1>heloo</h1></div>
+        <div className='border text-center p-3 m-3 bg-green-200 '>
+            <h1>{title}</h1>
         </div>
-    );
-};
+    )
+}
 
-export default BookMark;
+BookMark.propTypes = {
+    bookMark: PropTypes.array
+}
+
+export default BookMark

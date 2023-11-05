@@ -5,15 +5,21 @@ import { useState } from 'react';
 import { BsFillBookmarkCheckFill } from "react-icons/bs";
 import { CiBookmark } from "react-icons/ci";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, addBookMarks}) => {
 
     const [isClick , setIsClick] = useState(false);
-
     const ButtonClick = () =>{
         setIsClick(!isClick)
     }
 
-    console.log('blog', blog)
+    const Event = () => {
+        ButtonClick();
+       if(!isClick){
+        addBookMarks(blog);
+       }
+       
+    }
+
     const { cover, author_img, postedDate, title, author, readingTime, hashtags } = blog;
     return (
         <div>
@@ -28,8 +34,7 @@ const Blog = ({ blog }) => {
                 </div>
                 <div className='flex gap-2 items-center'>
                     <span>{readingTime}</span>
-                    <button onClick={ButtonClick}>{isClick ? <BsFillBookmarkCheckFill /> : <CiBookmark/>  }</button>
-                    
+                    <button onClick={Event}>{isClick ? <BsFillBookmarkCheckFill /> : <CiBookmark/>  }</button>   
                 </div>
             </div>
             <div className='my-[20px]'>
