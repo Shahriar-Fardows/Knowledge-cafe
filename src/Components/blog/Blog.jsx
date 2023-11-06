@@ -5,7 +5,8 @@ import { useState } from 'react';
 import { BsFillBookmarkCheckFill } from "react-icons/bs";
 import { CiBookmark } from "react-icons/ci";
 
-const Blog = ({ blog, addBookMarks}) => {
+
+const Blog = ({ blog, addBookMarks, readingTimes}) => {
 
     const [isClick , setIsClick] = useState(false);
     const ButtonClick = () =>{
@@ -20,7 +21,8 @@ const Blog = ({ blog, addBookMarks}) => {
        
     }
 
-    const { cover, author_img, postedDate, title, author, readingTime, hashtags } = blog;
+    const {id, cover, author_img, postedDate, title, author, readingTime, hashtags } = blog;
+    
     return (
         <div>
             <img className='mb-[2rem]' src={cover} alt="" />
@@ -33,7 +35,7 @@ const Blog = ({ blog, addBookMarks}) => {
                     </div>
                 </div>
                 <div className='flex gap-2 items-center'>
-                    <span>{readingTime}</span>
+                    <span>{readingTime} min</span>
                     <button onClick={Event}>{isClick ? <BsFillBookmarkCheckFill /> : <CiBookmark/>  }</button>   
                 </div>
             </div>
@@ -48,7 +50,7 @@ const Blog = ({ blog, addBookMarks}) => {
                         </span>)
                     }
                 </p>
-                <a className='text-[#6047EC] underline underline-offset-1' href="">Mark as read</a>
+                <button onClick={()=> readingTimes( readingTime ,id )} className='text-[#6047EC] underline underline-offset-1' href="">Mark as read </button>
             </div>
             <hr /><br />
 

@@ -5,7 +5,7 @@ import Blog from "../blog/Blog";
 
 
 // eslint-disable-next-line react/prop-types
-const Blogs = ({addBookMarks}) => {
+const Blogs = ({addBookMarks, readingTimes}) => {
     const [blogData , setBlogData] = useState([]);
 
     useEffect(()=> {
@@ -22,6 +22,7 @@ const Blogs = ({addBookMarks}) => {
                key={blog.id}
                addBookMarks={addBookMarks}
                 blog={blog}
+                readingTimes={readingTimes}
                ></Blog>)
             }
         </div>
