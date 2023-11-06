@@ -21,6 +21,11 @@ const Blog = ({ blog, addBookMarks, readingTimes}) => {
        
     }
 
+    const Event2 = () =>{
+        readingTimes( readingTime ,id );
+        setIsClick(false);
+    }
+
     const {id, cover, author_img, postedDate, title, author, readingTime, hashtags } = blog;
     
     return (
@@ -50,7 +55,7 @@ const Blog = ({ blog, addBookMarks, readingTimes}) => {
                         </span>)
                     }
                 </p>
-                <button onClick={()=> readingTimes( readingTime ,id )} className='text-[#6047EC] underline underline-offset-1' href="">Mark as read </button>
+                <button onClick={Event2} className='text-[#6047EC] underline underline-offset-1' href="">Mark as read </button>
             </div>
             <hr /><br />
 
